@@ -1,0 +1,94 @@
+// @import "@/scss/media-queries.scss";
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:300,600');
+// @import "@/scss/_mixins.scss";
+html {
+  height: 100%;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+}
+
+:root {
+  // --background: rgba(0, 214, 170, .85);
+  --background: #2C3E50;
+}
+
+$app-background: #ecf0f1;
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: $app-background; // thanks to vue.config.js & _colors.scss
+  // font: 13px "Roboto", Helvetica, Arial, sans-serif;
+  font: 14px "Avenir", Helvetica, Arial, sans-serif;
+}
+
+h1 {
+  font-size: 1.5rem;
+}
+
+h2 {
+  font-size: 1.2rem;
+  color: darkblue;
+}
+
+h3 {
+  font-size: 1.05rem
+}
+
+h6 {
+  margin-bottom: 2px;
+}
+
+small {
+  text-align: right;
+}
+
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+  margin-bottom: 1rem;
+  background-color: rgba(0,0,0,0);
+  width: 100%
+}
+
+th {
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+th, td {
+  min-width: 150px;
+  padding: 10px 20px;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #2C3E50;
+  border-color: #2C3E50;
+}
+
+.btn {
+  display: inline-block;
+  font-weight: 500;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  user-select: none;
+  border: 0.25rem solid transparent;
+  padding: .3rem .6rem;
+  font-size: 1rem;
+  line-height: 1.25;
+  border-radius: .25rem;
+  transition: color 0.15s ease-in-out,background-color 0.15s ease-in-out,border-color 0.15s ease-in-out,box-shadow 0.15s ease-in-out;
+}
